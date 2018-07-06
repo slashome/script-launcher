@@ -1,8 +1,8 @@
 package main
 
 import (
-	"os"
 	"github.com/slashome/script-launcher/print"
+	"os"
 )
 
 const version string = "0.0.1"
@@ -21,7 +21,7 @@ func main() {
 	// test if folder exists
 	_, err := os.Stat(path)
 	if err != nil {
-		print.Error("Folder " + path + " does not exist", false)
+		print.Error("Folder "+path+" does not exist", false)
 		os.Exit(0)
 	}
 	// test if options have been given
@@ -29,7 +29,6 @@ func main() {
 		print.List(path)
 		os.Exit(0)
 	}
-		// group := args[1]
-		// action := args[2]
+	// group := args[1]
+	// action := args[2]
 }
-
