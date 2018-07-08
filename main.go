@@ -6,7 +6,7 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/slashome/script-launcher/print"
+	"github.com/slashome/scriptr/print"
 )
 
 const version string = "0.0.1"
