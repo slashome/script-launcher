@@ -17,7 +17,7 @@ func main() {
 	args := os.Args[1:]
 	// test if scripts path as been given
 	if len(args) == 0 {
-		print.Error("Please entrer the scripts path as a first argument")
+		print.ErrorWithUsage("Please entrer the scripts path as a first argument")
 		os.Exit(0)
 	}
 	// get script path
@@ -25,7 +25,7 @@ func main() {
 	// test if folder exists
 	_, err := os.Stat(path)
 	if err != nil {
-		print.Error("Folder " + path + " does not exist")
+		print.ErrorWithUsage("Folder " + path + " does not exist")
 		os.Exit(0)
 	}
 	// test if options have been given
