@@ -96,7 +96,7 @@ func printList(path string, group string) {
 }
 
 func printHeader() {
-	fmt.Println("Script Launcher", color.GreenString(version))
+	fmt.Println("Scriptr", color.GreenString(version))
 }
 
 func getNSpaces(n int) string {
